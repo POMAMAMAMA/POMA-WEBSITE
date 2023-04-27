@@ -1,0 +1,46 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+ }
+ 
+ .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ }
+ 
+ .work {
+  width: 300px;
+  margin: 20px;
+  position: relative;
+ }
+ 
+ .work img {
+  width: 100%;
+ }
+ 
+ .info {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.5s;
+ }
+ 
+ .work:hover .info {
+  opacity: 1;
+ }
+ 
+ h3 {
+  margin-top: 0;
+ }
+ 
+ p {
+  margin-bottom: 0;
+ }
+ 
