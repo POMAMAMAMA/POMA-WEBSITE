@@ -1,0 +1,77 @@
+/* 全局样式 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* 头部样式 */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 32px;
+  margin: 0;
+  animation: jump 1s ease-in-out infinite alternate;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover { color: #ffd700; }
+/* 关于我部分的样式 */ #about { background-color: #fff; color: #333; padding: 60px 0; }
+#about h2 { text-align: center; }
+#about p { max-width: 600px; margin: 0 auto; text-align: justify; line-height: 1.5; }
+/* 项目部分的样式 */ #projects { background-color: #f2f2f2; padding: 60px 0; }
+#projects h2 { text-align: center; }
+.project { max-width: 800px; margin: 0 auto 40px; text-align: center; }
+.project img { max-width: 100%; height: auto; border-radius: 5px; }
+.project p { margin-top: 10px; }
+/* 联系我部分的样式 */ #contact { background-color: #333; color: #fff; padding: 60px 0; }
+#contact h2 { text-align: center; }
+label, input, textarea { display: block; margin-bottom: 20px; width: 100%; }
+label { font-weight: bold; }
+input, textarea { padding: 10px; border-radius: 5px; border: none; }
+textarea { height: 120px; }
+input[type="submit"] { background-color: #ffd700; color: #333; font-weight: bold; cursor: pointer; transition: background-color 0.3s; }
+input[type="submit"]:hover { background-color: #f2c200; }
+/* 底部样式 */ footer { background-color: #333; color: #fff; text-align: center; padding: 20px; }
