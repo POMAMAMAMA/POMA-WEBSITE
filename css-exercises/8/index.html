@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>我的作品集</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 class="logo">我的作品集</h1>
+    <nav>
+      <ul>
+        <li>< a href="#">首页</ a></li>
+        <li>< a href="#about">关于我</ a></li>
+        <li>< a href="#projects">项目</ a></li>
+        <li>< a href="#contact">联系我</ a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>关于我</h2>
+      <p>介绍。</p>
+    </section>
+
+    <section id="projects">
+      <h2>项目</h2>
+      <div class="project">
+        <img src="project1.jpg" alt="项目1">
+        <h3>项目1</h3>
+        <p>1111。</p>
+      </div>
+      <div class="project">
+        <img src="project2.jpg" alt="项目2">
+        <h3>项目2</h3>
+        <p>2222。</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>联系我</h2>
+      <form>
+        <label for="name">姓名</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">邮箱</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">留言</label>
+        <textarea id="message" name="message" required></textarea>
+        <input type="submit" value="发送">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 我的作品集</p>
+  </footer>
+</body>
+</html>
