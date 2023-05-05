@@ -1,0 +1,114 @@
+/* 全局样式 */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* 顶部导航样式 */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #FFC107;
+}
+
+/* 关于我和项目部分样式 */
+section {
+  padding: 50px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.project {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project img {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+/* 联系我部分样式 */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+input[type="submit"] {
+  background-color: #FFC107;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #FF9800;
+}
+
+/* 底部样式 */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* 动效样式 */
+.logo {
+  animation: jump 1s ease-in-out infinite alternate;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
