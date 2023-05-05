@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>个人作品集展示</title>
+    <style>
+      body {
+        background-color: #333;
+        color: #fff;
+        font-family: Arial, sans-serif;
+      }
+
+      /* 个人介绍和头像样式 */
+      #intro {
+        width: 400px;
+        height: 400px;
+        margin: 0 auto;
+        text-align: center;
+        border-radius: 50%;
+        background-color: #222;
+        overflow: hidden;
+        position: relative;
+      }
+
+      #intro img {
+        max-width: 100%;
+        max-height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      #intro img:hover {
+        transform: rotate(360deg);
+      }
+
+      #intro h1 {
+        margin-top: 30px;
+        font-size: 36px;
+      }
+
+      /* 作品部分样式 */
+      #portfolio {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      .item {
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+        background-color: #444;
+      }
+
+      /* 媒体查询，用于响应式布局 */
+      @media (max-width: 768px) {
+        #intro {
+          width: 200px;
+          height: 200px;
+        }
+
+        #intro h1 {
+          font-size: 24px;
+        }
+
+        .item {
+          width: 150px;
+          height: 150px;
+          margin: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="intro">
+      <img src="myphoto.jpg" alt="我的照片" />
+      <h1>欢迎来到我的作品集</h1>
+    </div>
+    <div id="portfolio">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+  </body>
+</html>
